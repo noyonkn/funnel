@@ -1,0 +1,122 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: sans-serif;
+
+}
+
+/* Section styles */
+.main_wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: top; 
+
+    height: 120vh; 
+    background-image: url('img/bg_pattern.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center; 
+}
+
+/* Centering the form */
+.form_wrapper {
+    background-color: #EDF2F4;
+    margin: 50px auto;
+    max-width: 550px;
+    padding:40px 60px;
+    border: 5px dashed #D90429;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 2px 5px 2px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 2px 5px 2px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 5px 2px rgba(0,0,0,0.4);
+}
+
+.form_wrapper h1{
+    font-family: sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+.form_wrapper h1 b {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+.form_wrapper h3{
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 23px;
+    line-height: 63px;
+    color: rgb(0, 0, 0);
+}
+/* Input field styles */
+.form_wrapper input[type="email"] {
+    width: calc(100%); 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 0 3px rgba(0,0,0,0.05) !important;
+    -moz-box-shadow: 0 0 0 3px rgba(0,0,0,0.05) !important;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.05) !important;
+    border: 1px solid rgba(0,0,0,0.2);
+    outline: none !important;
+    font-size: 17px;
+    padding: 12px 40px;
+    font-weight: bold;
+}
+
+/* Placeholder image for email field */
+.form_wrapper input[type="email"] {
+    background-image: url('img/email.webp');
+    background-repeat: no-repeat;
+    background-size: 22px 22px; 
+    background-position: 10px center; 
+    padding-left: 40px; 
+    
+}
+.form_wrapper input[type="email"]:focus {
+    border-color: #42B0E2;
+}
+
+/* Submit button styles */
+.form_wrapper .submit_btn {
+    display: block;
+    text-align: center;
+}
+
+.form_wrapper .submit_btn img {
+    max-width: 100%;
+}
+.form_wrapper p{
+    text-align: center;
+    color: rgba(47, 47, 47, 0.35);
+    font-size: 14px;
+    margin: 20px 0px 0px;
+}
+
+
+/* Mobile-responsive */
+
+@media only screen and (min-width: 0px) and (max-width: 770px){
+.form_wrapper {
+    padding:40px 10px !important;
+    
+}
+
+.form_wrapper h1{
+    font-size: 30px; 
+}
+
+.form_wrapper h3{
+    font-size: 20px;
+}
+
+}
