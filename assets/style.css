@@ -48,13 +48,14 @@ body {
     color: rgb(255, 0, 0);
     text-decoration: underline;
 }
-.form_wrapper h3{
+.form_wrapper h3 {
     font-family: sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 23px;
-    line-height: 63px;
+    line-height: 33px;
     color: rgb(0, 0, 0);
+    margin: 20px 0px;
 }
 /* Input field styles */
 .form_wrapper input[type="email"] {
